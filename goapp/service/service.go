@@ -115,7 +115,7 @@ func (s *Service) setupHandler() (err error) {
 	s.handler.Styles = make([]string, 0)
 	if s.isDev {
 		s.handler.AutoUpdateInterval = time.Second * 3
-		s.handler.Version = ""
+		s.handler.Version = fmt.Sprintf("%d", time.Now().Unix())
 		s.handler.Env["DEV"] = "1"
 	} else {
 		s.handler.AutoUpdateInterval = time.Hour

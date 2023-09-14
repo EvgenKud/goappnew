@@ -12,7 +12,7 @@ type Root struct {
 }
 
 func (r *Root) Render() app.UI {
-	return app.Div().Text(app.Getenv("GOAPP_VERSION"))
+	return app.Div().Text(app.Getenv("GOAPP_VERSION") + " app")
 }
 
 func (r *Root) OnAppUpdate(ctx app.Context) {
