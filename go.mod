@@ -10,7 +10,7 @@ require (
 	github.com/magefile/mage v1.15.0
 	github.com/maxence-charriere/go-app/v9 v9.8.0
 	github.com/mlctrez/servicego v1.4.6
-	github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5
+	github.com/oetherington/smetana v0.2.4
 )
 
 require (
